@@ -27,7 +27,7 @@ function print_slab() {
   echo
 }
 
-function print_process_info {
+function print_process_info() {
   PIDS=$(ps -ef | grep $1 | grep -v 'grep' | grep -v "${MYNAME}" | awk '{print $2}')
   OLD_IFS="$IFS"
   IFS=","
