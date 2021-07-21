@@ -58,10 +58,10 @@ function main() {
     done
     echo
 
-    # print_memory
-    # print_disk
-    # print_slab
-	break
+    print_memory
+    print_disk
+    print_slab
+
     sleep ${CYCLE}
   done
 }
